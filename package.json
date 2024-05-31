@@ -1,0 +1,14 @@
+{
+  "name": "angularfilemanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@syncfusion/ej2-angular-pdfviewer": "^25.1.39"
+  }
+}

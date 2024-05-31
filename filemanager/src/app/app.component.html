@@ -1,0 +1,23 @@
+<div fxLayout="row">
+  <div fxFlex="2%"></div>
+  <div fxFlex="96%">
+    <router-outlet />
+    <div class="file-container">
+      <ejs-filemanager #filemanager id='file-manager' [height]=viewHeight [ajaxSettings]='ajaxSettings'
+        [allowDragAndDrop]='allowDragAndDrop' (fileDragStart)='onFileDragStart($event)'
+        (fileDragStop)='onFileDragStop($event)' (fileDragging)='onFileDragging($event)'
+        (fileDropped)='onFileDropped($event)' (fileOpen)="fileOpen($event)" (beforeSend)='onBeforeSend($event)'>
+      </ejs-filemanager>
+    </div>
+    <div class="pdf-container">
+      <div  class="title-container"><span class="pdf-title title"></span> <button class="close-button" (click)='onClicked()'>close</button></div>
+      <ejs-pdfviewer id="pdfViewer" #pdfView 
+        [serviceUrl]='service'
+        [enableNavigationToolbar]="true"
+        [toolbarSettings]='toolbarSettings'
+        (toolbarClick)="toolbarClick($event)"
+        style="height:calc(100% - 22px);display:block">></ejs-pdfviewer>
+    </div>
+  </div>
+  <div fxFlex="2%"></div>
+</div>

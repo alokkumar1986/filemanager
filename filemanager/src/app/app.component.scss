@@ -1,0 +1,24 @@
+.container {
+    
+}
+
+.file-container {
+    height: calc(100vh - 50px);
+  }
+  
+  .title-container {
+    background-color: #eee;
+    height: 22px;
+  }
+
+  .doc-container,.pdf-container,.excel-container {
+    height:100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+  }
+
+  .close-button{
+    float:right;
+  }
